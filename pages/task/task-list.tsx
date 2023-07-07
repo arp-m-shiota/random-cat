@@ -12,7 +12,6 @@ type Data = {
 };
 
 const TaskList: NextPage<Props> = ({ tasks }) => {
-  // console.log(tasks);
   return (
     <div className="flex flex-col justify-center items-center">
       <h1>TaskListを表示する</h1>
