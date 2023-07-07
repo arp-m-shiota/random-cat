@@ -16,7 +16,7 @@ const TaskList: NextPage<Props> = ({ tasks }) => {
     <div className="flex flex-col justify-center items-center">
       <h1>TaskListを表示する</h1>
       {tasks.map((task) => (
-        <div className="border-solid border p-3 mt-4">
+        <div key={task.id} className="border-solid border p-3 mt-4">
           <p>{task.title}</p>
         </div>
       ))}
