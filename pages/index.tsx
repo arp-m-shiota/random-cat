@@ -29,7 +29,7 @@ const IndexPage: NextPage<Props> = ({ initialImageUrl }) => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="mt-5 mb-5">
-        <Button title="他のにゃんこも見る" onClick={handleClick} />
+        <Button title="今日のにゃんこも見る" onClick={handleClick} />
       </div>
       <div className="max-w-[500px]">
         {loading ? (
