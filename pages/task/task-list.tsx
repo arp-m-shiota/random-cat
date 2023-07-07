@@ -24,7 +24,7 @@ const TaskList: NextPage<Props> = ({ tasks }) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const res = await fetch("http://localhost:3000/api/task");
   const tasks = await res.json();
 
